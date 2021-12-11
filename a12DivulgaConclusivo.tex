@@ -1,0 +1,65 @@
+%
+% brownletter_example.tex - an example latex file to illustrate brownletter.cls
+%
+% Copyright 2003, Nesime Tatbul (tatbul@cs.brown.edu)
+%
+\documentclass[12pt]{uaefata}
+
+
+\usepackage{hyperref}
+
+
+\date{}
+%\title{ModeloUAEF}
+%
+\input{candidatos/candidatos.tex}
+
+\input{notas/didatica.tex}
+
+\input{notas/titulos.tex}
+
+\input{notas/final.tex}
+
+\input{comissao/comissao.tex}
+
+\input{regras/regras.tex}
+
+
+\signature{\prsd \\ \prsdtit \\
+}
+
+
+\begin{document}
+	
+\begin{letter}{
+		\textbf{Relatório de divulgação de todas as notas dos candidatos  do \concurso para \cargo  a que se refere o \edital}
+	}
+	
+\opening{}
+
+\centering
+
+\textbf{Resultado Final do \concurso do \edital}
+
+\begin{tabular}{|l|c|c|c|}
+	\hline
+	\textbf{Candidato}	&	\textbf{Didática}	&	\textbf{Títulos}	&	\textbf{Nota Final}	\\
+	\hline
+	\cdta	&	\cdtand 	&	\cdtant	&	\cdtanf  	\\
+	\cdtb	&	\cdtbnd 	&	\cdtbnt	&	\cdtbnf 	\\
+	\cdtc	&	\cdtcnd 	&	\cdtcnt	& 	\cdtcnf 	\\
+	\hline
+\end{tabular}
+
+		
+		\closing{Campina Grande, 10 de dezembro de 2021.}
+		
+		
+		
+		%\cc{J. Kirschenbaum}
+		
+	\end{letter}
+	
+\end{document}
+
+

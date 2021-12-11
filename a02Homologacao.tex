@@ -1,0 +1,61 @@
+%
+% brownletter_example.tex - an example latex file to illustrate brownletter.cls
+%
+% Copyright 2003, Nesime Tatbul (tatbul@cs.brown.edu)
+%
+% Copyright 2021, (classes para substituto UFCG) Sergio Rivero (sergio.rivero@ufcg.edu.br)
+%
+\documentclass[12pt]{uaefata}
+
+\usepackage{hyperref}
+
+
+\date{} % if no date specified, today's date is used 
+
+%\subject{Ata} % optional subject line
+
+\input{candidatos/candidatos.tex}
+
+\input{notas/didatica.tex}
+
+\input{notas/titulos.tex}
+
+\input{notas/final.tex}
+
+\input{comissao/comissao.tex}
+
+\input{regras/regras.tex}
+
+
+
+\begin{document}
+
+\begin{letter}{
+		\textbf{Resultado da avaliação da documentação para a  inscrição do \concurso, para \cargo,  a que se refere o \edital.}
+	}
+
+\opening{}
+
+\centering
+
+\begin{tabular}{|l|l|c|}
+	\hline
+	\textbf{Candidata(o)} & \textbf{Resultado} & \textbf{Motivo}\\
+	\hline
+	\cdta & Deferida &  - \\
+	\cdtb & Deferida &  - \\
+	\cdtc & Deferida &  - \\
+	\hline
+\end{tabular} 
+
+
+
+\closing{Campina Grande, \today.}
+
+
+
+%\cc{J. Kirschenbaum}
+
+\end{letter}
+
+\end{document}

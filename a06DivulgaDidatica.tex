@@ -1,0 +1,71 @@
+%
+% brownletter_example.tex - an example latex file to illustrate brownletter.cls
+%
+% Copyright 2003, Nesime Tatbul (tatbul@cs.brown.edu)
+%
+% Copyright 2021, (classes para substituto UFCG) Sergio Rivero (sergio.rivero@ufcg.edu.br)
+%
+
+\documentclass[12pt]{uaefata}
+
+\usepackage{hyperref}
+
+
+\input{candidatos/candidatos.tex}
+
+\input{notas/didatica.tex}
+
+\input{notas/titulos.tex}
+
+\input{notas/final.tex}
+
+\input{comissao/comissao.tex}
+
+\input{regras/regras.tex}
+
+
+\date{} % if no date specified, today's date is used 
+
+%\subject{Ata} % optional subject line
+
+
+\begin{document}
+
+\begin{letter}{
+		\textbf{Resultado da Prova Didática do \concurso para \cargo  a que se refere o \edital.}
+	}
+ 
+\opening{Prezadas(os) Candidatas(os),}
+
+Seguem neste comunicado, os resultados da prova didática.
+
+%\newpage
+
+\centering
+
+\textbf{Notas da Prova Didática} \\
+(ordem alfabética, Artigo 23, \S 3\textordmasculine da resolução \resconc)
+
+
+\begin{tabular}{|l|c|}
+	\hline
+	\textbf{Candidata(o)} & \textbf{Nota} \\
+	\hline
+	\cdta	&	\cdtand	\\
+	\cdtb	&	\cdtbnd	\\
+	\cdtc	&	\cdtcnd	\\
+	\hline
+\end{tabular} 
+
+
+
+
+\closing{Campina Grande, \today.}
+
+
+
+%\cc{J. Kirschenbaum}
+
+\end{letter}
+
+\end{document}

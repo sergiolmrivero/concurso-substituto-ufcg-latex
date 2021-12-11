@@ -1,0 +1,64 @@
+%
+% brownletter_example.tex - an example latex file to illustrate brownletter.cls
+%
+% Copyright 2003, Nesime Tatbul (tatbul@cs.brown.edu)
+%
+% Copyright 2021, (classes para substituto UFCG) Sergio Rivero (sergio.rivero@ufcg.edu.br)
+%
+
+\documentclass[12pt]{uaefata}
+
+\usepackage{hyperref}
+
+
+\date{} % if no date specified, today's date is used 
+
+%\subject{Ata} % optional subject line
+
+\input{candidatos/candidatos.tex}
+
+\input{notas/didatica.tex}
+
+\input{notas/titulos.tex}
+
+\input{notas/final.tex}
+
+\input{comissao/comissao.tex}
+
+\input{regras/regras.tex}
+
+
+
+\begin{document}
+
+\begin{letter}{
+		\textbf{Ata do sorteio do ponto e da ordem de apresentação dos candidatos do \concurso, para \cargo,  a que se refere o \edital.}
+	}
+ 
+\opening{}
+
+Às 8:00h do dia 06 de dezembro de 2021 a banca examinadora do \concurso do \edital reuniu-se com os candidatos inscritos no concurso para a seleção do ponto e da ordem de apresentação da prova didática do referido concurso. Para a execução da reunião usou-se a sala virtual do aplicativo starlink trek. A seleção do ponto da prova didática se deu utilizando a ferramenta de geração de números aleatórios existente na página de internet do endereço numpy.random. O ponto selecionado aleatoriamente foi o número 42 (\textit{Propulsão de Dobdra teoria de Alcuberre.}) e a ordem de apresentação dos candidatos sorteada foram os números \textit{13, 21, 34}. Os nomes dos candidatos na ordem de apresentação seguem abaixo.
+
+\centering
+
+\begin{tabular}{|l|c|}
+	\hline
+	\textbf{Candidata(o)} & \textbf{Número}\\
+	\hline
+	\cdta & 34\\
+	\cdtb & 21 \\
+	\cdtc & 13 \\
+	\hline
+\end{tabular} 
+
+
+
+\closing{Campina Grande, \today.}
+
+
+
+%\cc{J. Kirschenbaum}
+
+\end{letter}
+
+\end{document}

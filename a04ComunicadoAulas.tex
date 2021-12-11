@@ -1,0 +1,74 @@
+%
+% brownletter_example.tex - an example latex file to illustrate brownletter.cls
+%
+% Copyright 2003, Nesime Tatbul (tatbul@cs.brown.edu)
+%
+% Copyright 2021, (classes para substituto UFCG) Sergio Rivero (sergio.rivero@ufcg.edu.br)
+%
+
+\documentclass[12pt]{uaefata}
+
+\usepackage{hyperref}
+
+\date{} % if no date specified, today's date is used 
+
+%\subject{Ata} % optional subject line
+
+\input{candidatos/candidatos.tex}
+
+\input{notas/didatica.tex}
+
+\input{notas/titulos.tex}
+
+\input{notas/final.tex}
+
+\input{comissao/comissao.tex}
+
+\input{regras/regras.tex}
+
+
+
+
+\begin{document}
+
+\begin{letter}{
+		\textbf{Comunicado sobre o sorteio do ponto e da ordem de apresentação dos candidatos do \concurso, para \cargo,  a que se refere o \edital.}
+	}
+ 
+\opening{Prezadas(os) Candidatas(os)}
+
+A banca examinadora do \concurso do \edital comunica a vossas senhorias os detalhes das apresentações da prova didática. 
+\begin{enumerate}
+	\item O ponto sorteado foi o número 42 (\textit{Propulsão de Dobdra teoria de Alcuberre.})
+	\item As(Os) candidatas(os) deverão estar disponíveis uma hora antes do horário determinado para sua prova didática (item 6.4 do edital)
+	\item A apresentação da prova didática é regida pela resolução \resconc do conselho universitário da UFCG
+	\item As salas para as apresentações são as seguintes:
+		\begin{itemize}
+			\item \today - Manhã - \href{https://meetInSpace.spc}{https://meetInSpace.spc}
+		\end{itemize}
+	\item Não é permitido aos candidatos assistir as provas de outros, isto implica que apenas um candidato deverá estar na sala, no momento de sua apresentação.
+	\item A ordem  e horários das provas didáticas seguem abaixo
+\end{enumerate}
+\centering
+
+\begin{tabular}{|l|c|}
+	\hline
+	\textbf{Candidata(o)} & \textbf{Dia e Horário}\\
+	\hline
+	\cdta & \today - 8:00h\\
+	\cdtb & \today - 9:00h \\
+	\cdtc & \today - 10:00h \\
+	\hline
+\end{tabular} 
+
+
+
+\closing{Campina Grande, \today.}
+
+
+
+%\cc{J. Kirschenbaum}
+
+\end{letter}
+
+\end{document}

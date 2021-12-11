@@ -1,0 +1,38 @@
+%
+% brownletter_example.tex - an example latex file to illustrate brownletter.cls
+%
+% Copyright 2003, Nesime Tatbul (tatbul@cs.brown.edu)
+%
+% Copyright 2021, (classes para substituto UFCG) Sergio Rivero (sergio.rivero@ufcg.edu.br)
+\documentclass[12pt]{uaefata}
+
+\usepackage{hyperref}
+
+
+\date{} % if no date specified, today's date is used 
+
+%\subject{Ata} % optional subject line
+
+\input{comissao/comissao.tex}
+
+\input{regras/regras.tex}
+
+\begin{document}
+
+\begin{letter}{
+		\textbf{Ata de reunião para a instalação da comissão do \concurso, para \cargo,  a que se refere o \edital, \today{}.}
+	}
+
+\opening{}
+
+Em \today{} reuniu-se a Banca Examinadora do processo seletivo para provimento de vaga para Professor Substituto da Universidade Federal de Campina Grande, sob o tema \textbf{Propulsão de Dobra}, a que se refere o edital \edital, composta pela \prsd, \mba~ e \mbb, para deliberação acerca das atividades pertinentes ao referido concurso. Após iniciados os trabalhos, foi eleito para presidir o concurso a \prsd. Nada mais havendo a tratar a reunião foi encerrada e para produzir os devidos efeitos, lavrou-se a presente Ata de Reunião da Banca Examinadora.  
+ 
+\closing{Assinam,}
+
+
+
+%\cc{J. Kirschenbaum}
+
+\end{letter}
+
+\end{document}

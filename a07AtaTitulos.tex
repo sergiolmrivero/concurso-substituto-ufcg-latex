@@ -1,0 +1,74 @@
+%
+% brownletter_example.tex - an example latex file to illustrate brownletter.cls
+%
+% Copyright 2003, Nesime Tatbul (tatbul@cs.brown.edu)
+%
+% Copyright 2021, (classes para substituto UFCG) Sergio Rivero (sergio.rivero@ufcg.edu.br)
+%
+
+\documentclass[12pt]{uaefata}
+
+\usepackage{hyperref}
+
+%\title{ModeloUAEF}
+%
+
+%\date{} % if no date specified, today's date is used 
+
+%\subject{Ata} % optional subject line
+
+
+
+\input{candidatos/candidatos.tex}
+
+\input{notas/didatica.tex}
+
+\input{notas/titulos.tex}
+
+\input{notas/final.tex}
+
+\input{comissao/comissao.tex}
+
+\input{regras/regras.tex}
+
+
+\begin{document}
+
+\begin{letter}{
+		\textbf{Ata da Avaliação da Prova de Títulos dos candidatos do \concurso para \cargo  a que se refere o \edital.}
+	}
+ 
+\opening{}
+
+Às 11:00h do dia 10 de dezembro de 2034 a banca examinadora do\concurso do \edital reuniu-se para a avaliação dos resultados da Prova de Títulos do referido concurso. Avaliou-se, seguindo o artigo 18 da resolução \resconc, apenas os candidatos que obtiveram nota maior ou igual a 70 na prova de títulos. De posse dos currículos e das referidas comprovações, a banca examinadora procedeu o cômputo dos pontos de títulos dos candidatos, seguindo a tabela do anexo II da \resconc, bem como os artigos da seção II da referida resolução e os artigos 25 a 28 da \resconc. As planilhas de notas para as provas de cada candidato foram compiladas e procedeu-se o ajuste dos pontos de cada candidato de acordo com o artigo 28 da \resconc, que seguem apresentados na tabela abaixo.
+
+
+\newpage
+
+
+\centering
+
+\textbf{Somatória e Nota Ajustada da Prova de Títulos}
+
+\begin{tabular}{|l|r|r|}
+	\hline
+	\textbf{Candidato}	&	\textbf{Nota}	&	\textbf{Ajustada}	\\
+	\hline
+	\cdta	&	\cdtanto	&	\cdtant	\\
+	\cdtb	&	\cdtbnto	&	\cdtbnt	\\
+	\cdtc	&	\cdtbnto	&	\cdtcnt	\\
+	\hline
+\end{tabular}
+
+
+
+
+\closing{Campina Grande, 10 de dezembro de 2021.}
+
+
+
+%\cc{J. Kirschenbaum}
+
+\end{letter}
+
+\end{document}

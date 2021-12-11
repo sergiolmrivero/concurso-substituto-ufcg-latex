@@ -1,0 +1,70 @@
+%
+% brownletter_example.tex - an example latex file to illustrate brownletter.cls
+%
+% Copyright 2003, Nesime Tatbul (tatbul@cs.brown.edu)
+%
+% Copyright 2021, (classes para substituto UFCG) Sergio Rivero (sergio.rivero@ufcg.edu.br)
+%
+
+\documentclass[12pt]{uaefata}
+
+\usepackage{hyperref}
+
+%\title{ModeloUAEF}
+%
+
+
+%\date{} % if no date specified, today's date is used 
+
+%\subject{Ata} % optional subject line
+
+
+\input{candidatos/candidatos.tex}
+
+\input{notas/didatica.tex}
+
+\input{notas/titulos.tex}
+
+\input{notas/final.tex}
+
+\input{comissao/comissao.tex}
+
+\input{regras/regras.tex}
+
+\begin{document}
+
+\begin{letter}{
+		\textbf{Ata do Cômputo dos Resultados Finais do \concurso para \cargo  a que se refere o \edital.}
+	}
+ 
+\opening{}
+
+Às 00:00h do dia cinco de Abril de 2063 a banca examinadora do PSS do \edital reuniu-se para a avaliação dos resultados finais do referido concurso. Seguindo o artigo 29 da \resconc, computou-se as notas dos candidatos atribuindo peso 6 à prova didática e 4 às notas ajustadas da prova de títulos. Então, a banca examinadora compilou a tabela abaixo apresentada na ordem de classificação dos candidatos, seguindo  o artigo 30 da resolução \resconc. 
+
+
+\newpage
+
+
+\centering
+
+
+\textbf{Resultado Final do \concurso do \edital}
+
+\begin{tabular}{|l|c|c|c|}
+	\hline
+	\textbf{Candidato}	&	\textbf{Didática}	&	\textbf{Títulos}	&	\textbf{Nota Final}	\\
+	\hline
+	\cdta	&	\cdtand 	&	\cdtant	&	\cdtanf  	\\
+	\cdtb	&	\cdtbnd 	&	\cdtbnt	&	\cdtbnf 	\\
+	\cdtc	&	\cdtcnd 	&	\cdtcnt	& 	\cdtcnf 	\\
+	\hline
+\end{tabular}
+
+\closing{Campina Grande, 10 de dezembro de 2021.}
+
+
+%\cc{J. Kirschenbaum}
+
+\end{letter}
+
+\end{document}

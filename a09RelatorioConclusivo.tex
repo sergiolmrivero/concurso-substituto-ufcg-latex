@@ -1,0 +1,139 @@
+%
+% brownletter_example.tex - an example latex file to illustrate brownletter.cls
+%
+% Copyright 2003, Nesime Tatbul (tatbul@cs.brown.edu)
+%
+% Copyright 2021, (classes para substituto UFCG) Sergio Rivero (sergio.rivero@ufcg.edu.br)
+%
+
+\documentclass[10pt]{uaefata}
+
+\usepackage{hyperref}
+
+
+\input{candidatos/candidatos.tex}
+
+\input{notas/didatica.tex}
+
+\input{notas/titulos.tex}
+
+\input{notas/final.tex}
+
+\input{comissao/comissao.tex}
+
+\input{regras/regras.tex}
+
+
+\begin{document}
+	
+	\begin{letter}{À Coordenação Administrativa da Federação \\
+			m.d.\\
+			Sarek\\}
+		
+		\opening{Sarek,}
+		
+\bigskip
+
+		
+
+
+\bigskip
+
+A banca examinadora encaminha a vossa senhoria o Relatório Conclusivo do \concurso, para \cargo,  a que se refere o \edital.
+
+		
+		
+\section{Notas obtidas pelos candidatos na prova didática, discriminadas por examinador}
+				
+
+	Números dos examinadores
+					
+		\begin{enumerate}
+			\item \prsd
+			\item \mba
+			\item \mbb
+		\end{enumerate}
+
+		%\newpage	
+			
+%\centering
+		
+\begin{center}
+
+		\textbf{Média da prova didática e notas  por examinador }
+		
+		\begin{tabular}{|l|c|c|c|c|}
+			\hline
+			\textbf{Candidata(o)}	&	Examinador 1	&	Examinador 2	&	Examinador 3	&	\textbf{Média}		\\
+			\hline										
+			\cdta	&	\cdtand	&	\cdtand	&	\cdtand	&	\cdtand \\
+			\cdtb	&	\cdtbnd	&	\cdtbnd	&	\cdtbnd	&	\cdtbnd	\\
+			\cdtc	&	\cdtcnd	&	\cdtcnd	&	\cdtcnd	&	\cdtcnd	\\
+			\hline													
+		\end{tabular}
+\end{center}		
+
+
+\newpage
+	
+\section{Notas obtidas pelos candidatos na prova de Títulos}
+
+
+
+\begin{center}
+
+\textbf{Somatória e Nota Ajustada da Prova de Títulos}
+
+\begin{tabular}{|l|c|c|}
+	\hline
+	\textbf{Candidato}	&	\textbf{Nota}	&	\textbf{Ajustada}	\\
+	\hline
+	\cdta	&	\cdtanto	&	\cdtant	\\
+	\cdtb	&	\cdtbnto	&	\cdtbnt	\\
+	\cdtc	&	\cdtcnto	&	\cdtcnt	\\
+	\hline
+\end{tabular}
+
+\end{center}
+
+%\newpage
+
+\section{Resultado Final do \concurso}
+
+%\centering
+
+\bigskip
+
+\begin{center}
+
+\textbf{Resultado Final do \concurso do \edital}
+
+\begin{tabular}{|l|c|c|c|}
+	\hline
+	\textbf{Candidato}	&	\textbf{Didática}	&	\textbf{Títulos}	&	\textbf{Nota Final}	\\
+	\hline
+	\cdta	&	\cdtand	&	\cdtant	&	\cdtanf	\\
+	\cdtb	&	\cdtbnd	&	\cdtbnt	&	\cdtbnf	\\
+	\cdtc	&	\cdtcnd	&	\cdtcnt	&	\cdtcnf	\\
+	\hline
+\end{tabular}
+
+
+
+
+\end{center}
+
+\newpage
+
+		
+		\closing{Campina Grande, \today.}
+		
+		
+		
+		%\cc{J. Kirschenbaum}
+		
+	\end{letter}
+	
+\end{document}
+
+

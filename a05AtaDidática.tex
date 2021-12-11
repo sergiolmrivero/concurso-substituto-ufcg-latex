@@ -1,0 +1,74 @@
+%
+% brownletter_example.tex - an example latex file to illustrate brownletter.cls
+%
+% Copyright 2003, Nesime Tatbul (tatbul@cs.brown.edu)
+%
+% Copyright 2021, (classes para substituto UFCG) Sergio Rivero (sergio.rivero@ufcg.edu.br)
+%
+\documentclass[12pt]{uaefata}
+
+\usepackage{hyperref}
+
+
+\date{} % if no date specified, today's date is used 
+
+%\subject{Ata} % optional subject line
+
+\input{candidatos/candidatos.tex}
+
+\input{notas/didatica.tex}
+
+\input{notas/titulos.tex}
+
+\input{notas/final.tex}
+
+\input{comissao/comissao.tex}
+
+\input{regras/regras.tex}
+
+
+
+\begin{document}
+
+\begin{letter}{
+		\textbf{Ata da Avaliação da Prova Didática dos candidatos do \concurso para \cargo  a que se refere o \edital.}
+	}
+ 
+\opening{}
+
+Às 14:00h do dia 09 de dezembro de 2021 a banca examinadora do \concurso do \edital reuniu-se para a avaliação dos resultados da prova didática do referido concurso. As planilhas de notas para as provas de cada candidato para cada avaliador foram apresentadas. As referidas planilhas continham notas de 0 a 100 dos de cada candidato participante da prova didática com a média ponderada de acordo com os critérios estabelecidos no artigo 22 da resolução 01/2018-UFCG. Calculou-se a média aritmética simples das notas dos candidatos dadas pelos avaliadores, que seguem abaixo. Os avaliadores estão nominados na tabela de notas da seguinte maneira:
+\begin{enumerate}
+	\item \prsd
+	\item \mba
+	\item \mbb
+\end{enumerate}
+
+
+\newpage
+
+
+\centering
+
+
+\textbf{Média da prova didática e notas  por avaliador }
+
+\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		\textbf{Candidata(o)}	&	Avaliador 1	&	Avaliador 2	&	Avaliador 3	&	\textbf{Nota}		\\
+		\hline										
+		\cdta	&	\cdtand	&	\cdtand	&	\cdtand	&	\cdtand \\
+		\cdtb	&	\cdtbnd	&	\cdtbnd	&	\cdtbnd	&	\cdtbnd	\\
+		\cdtc	&	\cdtcnd	&	\cdtcnd	&	\cdtcnd	&	\cdtcnd	\\
+		\hline										
+
+\end{tabular}
+
+\closing{Campina Grande, \today.}
+
+
+
+%\cc{J. Kirschenbaum}
+
+\end{letter}
+
+\end{document}
